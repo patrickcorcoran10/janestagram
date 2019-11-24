@@ -17,8 +17,8 @@ import store, { history } from './store';
 const router = (
     <Provider store={store}>
         <Router history={history}>
-            <Route path='/' component={SignIn}/>
-            <Route path='/home' component={App}>
+            {/* <Route path='/' component={SignIn}/> */}
+            <Route path='/' component={App}>
                 <IndexRoute component={PhotoGrid}></IndexRoute>
                 <Route path='/view/:postId' component={Single}></Route>
             </Route>
